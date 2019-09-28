@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import * as icons from '../dist';
+import * as icons from '../index';
 
 export default {
   name: 'App',

@@ -1,6 +1,6 @@
 {
   "name": "@brattonross/vue-octicons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GitHub Octicons packaged as Vue components.",
   "author": "bratton.ross@gmail.com",
   "license": "MIT",
@@ -13,20 +13,22 @@
     "type": "git",
     "url": "https://github.com/brattonross/vue-octicons"
   },
-  "main": "./dist/index.js",
+  "main": "index.js",
   "typings": "index.d.ts",
   "files": [
-    "dist",
+    "index.js",
     "index.d.ts"
   ],
   "scripts": {
-    "build": "node ./build.js",
+    "build": "node ./build.js && npm run build:dist",
     "build:example": "poi --prod --config example/poi.config.js",
+    "build:dist": "bili",
     "prepublishOnly": "npm run build",
     "serve": "poi --serve --config example/poi.config.js"
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^5.0.0",
+    "bili": "^4.8.1",
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.1",
@@ -35,6 +37,7 @@
     "pascal-case": "^2.0.1",
     "poi": "^12.7.2",
     "prettier": "^1.18.2",
+    "rollup-plugin-vue": "^5.0.1",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   }

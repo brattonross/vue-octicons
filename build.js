@@ -65,8 +65,10 @@ const typings = icons
   .map(icon => `export const ${componentName(icon)}: VueConstructor;`)
   .join('\n\n');
 
-const typeFile = `import { VueConstructor } from 'vue';
+const typeFile = `
+import { VueConstructor } from 'vue';
 
-${typings}`;
+${typings}
+`.trim();
 
 fs.outputFileSync('./index.d.ts', typeFile, 'utf-8');
