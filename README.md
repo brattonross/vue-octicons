@@ -1,5 +1,7 @@
 # vue-octicons
 
+[![NPM version](https://img.shields.io/npm/v/@brattonross/vue-octicons.svg?style=flat)](https://npmjs.com/package/@brattonross/vue-octicons)
+
 GitHub Octicons packaged as Vue components
 
 ## Install
