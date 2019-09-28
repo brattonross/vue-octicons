@@ -22,6 +22,15 @@
 
     <main>
       <div class="container">
+        <h3>Install</h3>
+        <div class="install__container">
+          <pre><code>{{ installCommand }}</code></pre>
+
+          <button class="button" @click="copyInstallCommand">
+            <clippy-icon />
+          </button>
+        </div>
+
         <div class="search__container">
           <input
             v-model.trim="search"
@@ -66,6 +75,7 @@ export default {
   data() {
     return {
       icons: Object.keys(icons),
+      installCommand: 'npm install @brattonross/vue-octicons',
       search: '',
       year: new Date().getFullYear()
     };
@@ -83,6 +93,10 @@ export default {
   },
 
   methods: {
+    copyInstallCommand() {
+      navigator.clipboard.writeText(this.installCommand);
+    },
+
     iconWidth(icon) {
       switch (icon) {
         case 'LogoGistIcon':
@@ -203,5 +217,30 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 600;
+}
+
+pre {
+  margin: 0;
+}
+
+pre code {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.install__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
 }
 </style>
