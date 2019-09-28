@@ -30,3 +30,7 @@ Setting a size directly in `px`:
 ```html
 <alert-icon size="24"></alert-icon>
 ```
+
+### Inspiration
+
+I was inspired to create this package when I saw [egoist's vue-feather-icons](https://github.com/egoist/vue-feather-icons). Please check out their repo for another great icon set.
