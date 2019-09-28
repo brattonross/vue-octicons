@@ -16,4 +16,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: example/dist
-        BUILD_SCRIPT: npm install && npm run build:example
+        BUILD_SCRIPT: npm install && npm run build && npm run build:example
