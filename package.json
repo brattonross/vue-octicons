@@ -1,6 +1,6 @@
 {
   "name": "@brattonross/vue-octicons",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "GitHub Octicons packaged as Vue components.",
   "author": "bratton.ross@gmail.com",
   "license": "MIT",
