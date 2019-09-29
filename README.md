@@ -4,6 +4,15 @@
 
 GitHub Octicons packaged as Vue components
 
+### Why should I use this library?
+
+I created this library for 2 main reasons:
+
+1. I wasn't happy with other libraries for Octicons in Vue out there; they felt too complicated
+2. No other libraries for Octicons in Vue that I could find came with type definitions
+
+This library was created mainly to solve those issues by staying simple and generating a type defenitions file on build.
+
 ## Install
 
 ```bash
