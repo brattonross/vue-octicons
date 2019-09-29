@@ -15,7 +15,7 @@ const template = ({ name, svg }) =>
     props: {
       size: {
         type: String,
-        default: '24',
+        default: '1x',
         validator: (s) => (!isNaN(s) || s.length >= 2 && !isNaN(s.slice(0, s.length -1)) && s.slice(-1) === 'x')
       }
     },
