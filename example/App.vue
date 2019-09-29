@@ -14,7 +14,7 @@
           </div>
 
           <a href="https://github.com/brattonross/vue-octicons">
-            <mark-github-icon size="3x" fill="#eee" />
+            <mark-github-icon size="3x" style="color: #eee" />
           </a>
         </div>
       </div>
@@ -27,7 +27,7 @@
           <pre><code>{{ installCommand }}</code></pre>
 
           <button class="button" @click="copyInstallCommand">
-            <clippy-icon />
+            <clippy-icon size="1.5x" />
           </button>
         </div>
 
@@ -100,9 +100,9 @@ export default {
     iconWidth(icon) {
       switch (icon) {
         case 'LogoGistIcon':
-          return 24 * 1.5625 + 'px';
+          return 16 * 1.5625 + 'px';
         case 'LogoGithubIcon':
-          return 24 * 2.8125 + 'px';
+          return 16 * 2.8125 + 'px';
         default:
           return null;
       }
@@ -208,7 +208,7 @@ body {
 }
 
 .footer__heart {
-  fill: red;
+  color: red;
   margin: 0 0.2rem;
 }
 
@@ -239,7 +239,7 @@ pre code {
   background: white;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   margin-left: 0.5rem;
   cursor: pointer;
 }
