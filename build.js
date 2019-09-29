@@ -31,6 +31,10 @@ const template = ({ name, svg }) =>
       attrs.width = attrs.width || size;
       attrs.height = attrs.height || size;
       ctx.data.attrs = attrs;
+      
+      const style = ctx.data.style || {};
+      style.fill = style.fill || 'currentColor';
+      ctx.data.style = style;
   
       return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...ctx.data}>')};
     }
