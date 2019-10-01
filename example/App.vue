@@ -27,7 +27,7 @@
           <pre><code>{{ installCommand }}</code></pre>
 
           <button class="button" @click="copyInstallCommand">
-            <clippy-icon size="1.5x" />
+            <clippy-icon height="24" width="21" />
           </button>
         </div>
 
