@@ -27,7 +27,7 @@
     "serve": "poi --serve --config example/poi.config.js"
   },
   "devDependencies": {
-    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "bili": "^4.8.1",
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
